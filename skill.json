@@ -1,0 +1,56 @@
+{
+  "name": "genpark-sparkfly-influencer-marketing-creator-intelligence-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - SparkFly (Tec-Do 2.0) global creator intelligence, TikTok/Instagram/YouTube influencer discovery & campaign attribution.",
+  "author": "genpark",
+  "category": "creator-marketing",
+  "tags": [
+    "genpark-skill",
+    "mcp-server",
+    "influencer-marketing",
+    "creator-intelligence",
+    "tiktok-marketing",
+    "instagram-creators",
+    "youtube-influencers",
+    "tec-do",
+    "sparkfly",
+    "ai-marketing",
+    "agentic-commerce"
+  ],
+  "inputs": {
+    "platform": {
+      "type": "string",
+      "enum": [
+        "tiktok",
+        "instagram",
+        "youtube"
+      ],
+      "default": "tiktok"
+    },
+    "category": {
+      "type": "string",
+      "description": "Creator niche (e.g. consumer_tech, fashion, beauty)"
+    },
+    "country": {
+      "type": "string",
+      "description": "Target geographic audience country code (e.g. US, GB, DE)"
+    },
+    "budget_usd": {
+      "type": "number",
+      "description": "Campaign budget in USD"
+    }
+  },
+  "outputs": {
+    "creators": {
+      "type": "array"
+    },
+    "brief_id": {
+      "type": "string"
+    },
+    "estimated_roas": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
