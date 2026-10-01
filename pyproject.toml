@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genpark-sparkfly-influencer-marketing-creator-intelligence-skill"
+version = "1.0.0"
+description = "SparkFly creator intelligence, influencer discovery, and campaign attribution skill."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
